@@ -1,12 +1,7 @@
-
 body {
   background: black;
   width: 100%;
   height: 100%;
-}
-
-#total {
-  color: red;
 }
 /* I wanted to apply these styles to the div container rather than the body but I wasn't able to get the black background to stretch to full screen */
 
@@ -14,14 +9,54 @@ body {
 h3 {
   font-family: 'Trade Winds', cursive;
 }
+
+ul {
+  list-style-type: none;
+}
+.welcomeRat {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  background-color: black;
+}
+
 .address, .pizzaSelect {
   display: flex;
   justify-content: center;
 }
 
+.ratText {
+  font-family: 'Trade Winds', cursive;
+  text-shadow: -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  2px 2px 0 #000;
+  color: red;
+  font-size: 60px;
+}
+
+.toppings {
+  margin-right: 20px;
+}
+
+#total {
+  color: red;
+}
+
+#orderTotal {
+  margin-bottom: 60px;
+}
+
 #form1 {
   display: none;
   color: white;
+
+}
+#form1 .ratHeader {
+  color: red;
+  text-align: center;
+  font-size: 40px;
 }
 
 #output {
@@ -31,19 +66,8 @@ h3 {
   color: white;
   height: 100%;
   text-align: center;
+}
 
-
-}
-ul {
-  list-style-type: none;
-}
-.welcomeRat {
-display: flex;
-justify-content: center;
-position: relative;
-width: 100%;
-background-color: black;
-}
 #ratHeader h3{
   position: absolute;
   top: 250px;
@@ -54,24 +78,11 @@ background-color: black;
   color: white;
   font-size: 80px;
   text-shadow: -2px -2px 0 #000,
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-     2px 2px 0 #000;
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  2px 2px 0 #000;
 }
+
 #ratHeader h3:hover {
   color: red;
-}
-
-.ratText {
-  font-family: 'Trade Winds', cursive;
-  text-shadow: -2px -2px 0 #000,
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-     2px 2px 0 #000;
-     color: red;
-     font-size: 60px;
-}
-
-.toppings {
-  margin-right: 20px;
 }

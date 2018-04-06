@@ -1,3 +1,4 @@
+// BACK END LOGIC //
 function Pizza(size, topping){
   this.size = size;
   this.topping = topping;
@@ -18,7 +19,7 @@ function Address(name, street, city, state, zip){
 Address.prototype.fullAddress = function() {
   return "<li>" + this.street + "</li>" + "<li>" + this.city + "</li>" + "<li>" + this.state + "</li>" + "<li>" + this.zip + "</li>"
 };
-
+// FRONT END LOGIC //
 $(document).ready(function(){
   $("#form1").hide();
 
@@ -26,11 +27,11 @@ $(document).ready(function(){
     $("#form1").fadeIn();
     $("#splash").hide();
   });
+
   $("#form1").submit(function(event){
     event.preventDefault();
     $("#output").fadeIn();
     $("#form1").hide();
-
 
     var topping = parseInt($("#topping").val());
     var size = parseInt($("#size").val());
