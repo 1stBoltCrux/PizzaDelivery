@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/styles.css">
   <script src="js/jquery-3.3.1.js" charset="utf-8"></script>
   <script src="js/scripts.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
   <title>Order Pizza</title>
 </head>
 <body>
   <div class="container">
     <form id="form1">
+      <div class="form-group">
+        <h3>Enter your address:</h3>
+        <input id="state" type="text" class="form-control" placeholder="State">
+        <input id="city" type="text" class="form-control" placeholder="City">
+        <input id="street" type="text" class="form-control" placeholder="Street">
+        <input id="zip" type="text" class="form-control" placeholder="Zip">
+      </div>
       <div class="form-group">
         <h3>Choose your topping:</h3>
         <select class="form-control" id="topping">
@@ -27,11 +34,11 @@
           <option value="3">Large</option>
         </select>
       </div>
-      <div class="newPizzas">
+      <!-- <div class="newPizzas">
 
-      </div>
+      </div> -->
       <button type="submit" class="btn btn-success">See your total</button>
-      <button id="addPizza" type="button" class="btn btn-info">Add another order</button>
+      <!-- <button id="addPizza" type="button" class="btn btn-info">Add another order</button> -->
       <div id="output">
 
       </div>
