@@ -7,63 +7,39 @@ Pizza.prototype.price = function() {
   return this.size + this.topping;
 };
 
-function Address(state, city, street, zip){
-  this.state = state;
+function Address(name, city, state, street, zip){
+  this.name = name;
   this.city = city;
+  this.state = state;
   this.street = street;
   this.zip = zip;
 }
+// Not sure if I should be adding these "<li>"s in the backend or in the front//
+Address.prototype.fullAddress = function() {
+  return "<li>" + this.city + "</li>" + "<li>" + this.state + "</li>" + "<li>" + this.street + "</li>" + "<li>" + this.zip + "</li>"
+};
 
-//
-//   $("#addPizza").click(function(){
-//     $(".newPizzas").append('<div class="newPizzaContainer">' +
-//     '<div class="form-group">' +
-//     '<h3>Choose your topping:</h3>' +
-//     '<select class="form-control" class="new-topping">' +
-//     '<option value="1">Cheese</option>' +
-//     '<option value="2">Veggie</option>' +
-//     '<option value="3">Meat Lovers</option>' +
-//     '<option value="4">Supreme</option>' +
-//     '</select>' +
-//     '</div>' +
-//     '<div class="form-group">' +
-//     '<h3>Choose your size:</h3>' +
-//     '<select class="form-control" class="new-size">' +
-//     '<option value="1">Small</option>' +
-//     '<option value="2">Medium</option>' +
-//     '<option value="3">Large</option>' +
-//     '</select>' +
-//     '</div>' +
-//     '</div>');
-  // });
 $(document).ready(function(){
   $("#form1").submit(function(event){
     event.preventDefault();
+
+    $("#form1").hide();
+    $("#output").show();
 
     var topping = parseInt($("#topping").val());
     var size = parseInt($("#size").val());
     var order = new Pizza(size, topping);
 
-    var state = $("#state").val();
+    var name = $("#name").val();
     var city = $("#city").val();
+    var state = $("#state").val();
     var street = $("#street").val();
     var zip = $("#zip").val();
+    var address = new Address(name, city, state, street, zip);
 
-    var address = new Adress(state, city, street, zip);
 
-    // $(".newPizzaContainer").each(function() {
-    //   var topping = $(this).find(".new-topping").val();
-    //   var size = $(this).find(".new-size").val();
-    //   console.log(topping);
-    //   console.log(size);
-    //   var newOrder = new Pizza(size, topping);
-    // });
-
-    $("#output").text("$" + order.price());
-    //document ready and event listener end tags//
-    // $(".new-topping").val("");
-    // $(".new-size").val("");
-    // $("#topping").val("");
-    // $("#size").val("");
+      $("#output p").text("$" + order.price());
+      $(".name").text(address.name);
+      $("#output ul").append(address.fullAddress());
   });
 });

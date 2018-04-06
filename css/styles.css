@@ -1,3 +1,6 @@
-/* #output {
+#output {
   display: none;
-} */
+}
+ul {
+  list-style-type: none;
+}
