@@ -1,18 +1,47 @@
+.container {
+  background: black;
+  width: 100%;
+}
+.address, .pizzaSelect {
+  display: flex;
+  justify-content: center;
+}
+
+.btnCenter {
+  margin-left: 500px;
+}
+
+#form1 {
+  display: none;
+  color: white;
+}
 #output {
   display: none;
 }
 ul {
   list-style-type: none;
 }
-#welcomeRat {
-  background-image: url(../imgs/bigpizza.png);
-  background-position: center;
-
+.welcomeRat {
+display: flex;
+justify-content: center;
+position: relative;
+width: 100%;
+background-color: black;
 }
 #ratHeader h3{
+  position: absolute;
+  top: 250px;
+  left: 0;
+  width: 100%;
   font-family: 'Trade Winds', cursive;
   text-align: center;
   color: white;
   font-size: 80px;
-  text-stroke: 2px black;
+  text-shadow: -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+     2px 2px 0 #000;
+}
+#ratHeader h3:hover {
+  color: red;
 }

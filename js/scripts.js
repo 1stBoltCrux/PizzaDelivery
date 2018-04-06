@@ -20,9 +20,15 @@ Address.prototype.fullAddress = function() {
 };
 
 $(document).ready(function(){
+  $("#form1").hide();
+
+  $("#ratHeader h3").click(function(){
+    $("#form1").fadeIn();
+    $(".container").removeClass("welcomeRat")
+    $("#splash").hide();
+  });
   $("#form1").submit(function(event){
     event.preventDefault();
-
     $("#form1").hide();
     $("#output").show();
 

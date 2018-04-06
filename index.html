@@ -9,34 +9,35 @@
   <title>Order Pizza</title>
 </head>
 <body>
-  <div class="container">
-
-    <div class="splash row">
-      <div class="col" id="welcomeRat">
+  <div class="container welcomeRat">
+    <div id="splash">
         <div id="ratHeader">
+          <img src="imgs/bigpizza.png" alt="">
           <h3>Enter the Rat</h3>
-        </div>
       </div>
     </div>
 
     <form id="form1">
-      <div class="form-group">
-        <h3>Enter your name and address:</h3>
-        <input id="name" type="text" class="form-control" placeholder="Name">
-        <input id="city" type="text" class="form-control" placeholder="City">
-        <input id="state" type="text" class="form-control" placeholder="State">
-        <input id="street" type="text" class="form-control" placeholder="Street">
-        <input id="zip" type="text" class="form-control" placeholder="Zip">
+      <div class="row address">
+        <div class="form-group col">
+          <h3>Enter your name and address:</h3>
+          <input id="name" type="text" class="form-control" placeholder="Name">
+          <input id="city" type="text" class="form-control" placeholder="City">
+          <input id="state" type="text" class="form-control" placeholder="State">
+          <input id="street" type="text" class="form-control" placeholder="Street">
+          <input id="zip" type="text" class="form-control" placeholder="Zip">
+        </div>
       </div>
-      <div class="form-group">
-        <h3>Choose your topping:</h3>
-        <select class="form-control" id="topping">
-          <option value="1">Cheese</option>
-          <option value="2">Veggie</option>
-          <option value="3">Meat Lovers</option>
-          <option value="4">Supreme</option>
-        </select>
-      </div>
+      <div class="row pizzaSelect">
+        <div class="form-group">
+          <h3>Choose your topping:</h3>
+          <select class="form-control" id="topping">
+            <option value="1">Cheese</option>
+            <option value="2">Veggie</option>
+            <option value="3">Meat Lovers</option>
+            <option value="4">Supreme</option>
+          </select>
+        </div>
       <div class="form-group">
         <h3>Choose your size:</h3>
         <select class="form-control" id="size">
@@ -45,7 +46,11 @@
           <option value="3">Large</option>
         </select>
       </div>
-      <button type="submit" class="btn btn-success">Place your order</button>
+      </div>
+      <div class="form-group">
+        <div class="pizzaSelect">
+          <button type="submit" class="btn btn-success">Place your order</button>
+        </div>
     </form>
     <div id="output">
       <h3>Your order total:</h3>
