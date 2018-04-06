@@ -27,6 +27,10 @@ $(document).ready(function(){
   $("#ratHeader h3").click(function(){
     $("#form1").fadeIn();
     $("#splash").hide();
+
+    $(".reEnter").click(function(){
+      location.reload();
+    })
   });
 
   $("#form1").submit(function(event){
