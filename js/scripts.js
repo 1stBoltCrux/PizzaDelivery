@@ -19,6 +19,7 @@ function Address(name, street, city, state, zip){
 Address.prototype.fullAddress = function() {
   return "<li>" + this.street + "</li>" + "<li>" + this.city + "</li>" + "<li>" + this.state + "</li>" + "<li>" + this.zip + "</li>"
 };
+
 // FRONT END LOGIC //
 $(document).ready(function(){
   $("#form1").hide();
