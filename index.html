@@ -16,34 +16,41 @@
           <h3>Enter the Rat</h3>
       </div>
     </div>
+    <div id="output">
+      <h3>Your order total is: <span id="total"></span></h3>
+      <h3>Your pizza will be delivered to this address:</h3>
+      <ul>
 
+      </ul>
+      <h3>Thank you <span class="name"></span> for choosing <span class="ratText"> Pizza Rat.</span></h3>
+    </div>
     <form id="form1">
       <div class="row address">
         <div class="form-group col">
           <h3>Enter your name and address:</h3>
-          <input id="name" type="text" class="form-control" placeholder="Name">
-          <input id="city" type="text" class="form-control" placeholder="City">
-          <input id="state" type="text" class="form-control" placeholder="State">
-          <input id="street" type="text" class="form-control" placeholder="Street">
-          <input id="zip" type="text" class="form-control" placeholder="Zip">
+          <input id="name" type="text" class="form-control" placeholder="Name" required>
+          <input id="city" type="text" class="form-control" placeholder="City" required>
+          <input id="state" type="text" class="form-control" placeholder="State" required>
+          <input id="street" type="text" class="form-control" placeholder="Street" required>
+          <input id="zip" type="text" class="form-control" placeholder="Zip" required>
         </div>
       </div>
       <div class="row pizzaSelect">
-        <div class="form-group">
+        <div class="form-group toppings">
           <h3>Choose your topping:</h3>
           <select class="form-control" id="topping">
-            <option value="1">Cheese</option>
-            <option value="2">Veggie</option>
-            <option value="3">Meat Lovers</option>
-            <option value="4">Supreme</option>
+            <option value="1">Cheese $1</option>
+            <option value="2">Veggie $2</option>
+            <option value="3">Meat Lovers $3</option>
+            <option value="4">Supreme $4</option>
           </select>
         </div>
-      <div class="form-group">
+      <div class="form-group sizes">
         <h3>Choose your size:</h3>
         <select class="form-control" id="size">
-          <option value="1">Small</option>
-          <option value="2">Medium</option>
-          <option value="3">Large</option>
+          <option value="5">Small $5</option>
+          <option value="10">Medium $10</option>
+          <option value="13">Large $13</option>
         </select>
       </div>
       </div>
@@ -52,15 +59,6 @@
           <button type="submit" class="btn btn-success">Place your order</button>
         </div>
     </form>
-    <div id="output">
-      <h3>Your order total:</h3>
-      <p></p>
-      <h3>Your pizza will be delivered to this address:</h3>
-      <ul>
-
-      </ul>
-      <h3>Thank you <span class="name"></span> for choosing Pizza Rat.</h3>
-    </div>
   </div>
 </body>
 </html>

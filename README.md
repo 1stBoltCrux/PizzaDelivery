@@ -1,43 +1,25 @@
 
-# _Ted Leary's Beep Booper_
+# _Ted Leary's Pizza Rat_
 
-#### _This site provides a user with the opportunity to translate numbers into beeps and boops._
+#### _This is a storefront site for a pizza delivery service._
 
 #### _By Ted Leary_
 
 ## _Behavior Driven Development Breakdown_
 
-* _1. Program takes in a value and outputs numbers from 0 up to the inputted value.
-input: 8
-output: [1, 2, 3, 4, 5, 6, 7, 8]_
+* _1. Behavior: Program will log input as a value or string.
+input: "Pepperoni", "Blortland"
+output: 3, "Blortland"_
 
-* _2. Program replaces 0 with "Beep"
-input: [0]
-output "Beep"_
+* _2. Behavior: Program will add up logged values.
+input: Topping: 3, Topping: 2
+output 5_
 
-* _3. Program replaces 1 with "Boop"
-input: [0, 1]
-output: "Beep, Boop"_
+* _3. Behavior: Program will concatenate logged strings.
+input: name: "Ted Leary", Street: "2008 NE Balooga st", City: "Blortland", State: "Booregon" Zip: "97999"
+output: "Ted Leary, 2008 NE Balooga st, Blortland Booregon, 97999"_
 
-* _4. Program identifies a string or number containing 0 and replaces with "Beep"
-input: [ .... 10]
-output: "...Beep"_
-
-* _5. Program identifies a string or number containing a 1 and replaces with "Boop"
-input: [....12]
-output: "...Boop"_
-
-* _6. Numbers divisible by three will be replaced with "I'm sorry Dave, I'm afraid I can't do that."
-input: [0, 1, 2, 3]
-output: "Beep, Boop, 2, I'm sorry Dave, I'm afraid I can't do that."_
-
-* _7. Program should determine which action to take on a number with both 1's, 0's and numbers divisible by 3 in an order of importance.
-input: [0...10, ... 13, ....30]
-output "Beep, ...Boop, ...Boop, I'm sorry Dave, I'm afraid I can't do that.""
-
-
-
-## The purpose of this website is to allow the user to input a number to be translated into beeps and boops.
+## The purpose of this website is to allow the user to choose pizza toppings, determine a price and ultimately order a pizza.
 
 * _clone the repository from github_
 
