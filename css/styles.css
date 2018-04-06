@@ -4,3 +4,15 @@
 ul {
   list-style-type: none;
 }
+#welcomeRat {
+  background-image: url(../imgs/bigpizza.png);
+  background-position: center;
+
+}
+#ratHeader h3{
+  font-family: 'Trade Winds', cursive;
+  text-align: center;
+  color: white;
+  font-size: 80px;
+  text-stroke: 2px black;
+}
