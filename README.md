@@ -8,16 +8,16 @@
 ## _Behavior Driven Development Breakdown_
 
 * _1. Behavior: Program will log input as a value or string._
-_input: "Pepperoni", "Blortland"_
-_output: 3, "Blortland"_
+* _input: "Pepperoni", "Blortland"_
+* _output: 3, "Blortland"_
 
 * _2. Behavior: Program will add up logged values._
-_input: Topping: 3, Topping: 2_
-_output 5_
+* _input: Topping: 3, Topping: 2_
+* _output 5_
 
 * _3. Behavior: Program will concatenate logged strings._
-_input: name: "Ted Leary", Street: "2008 NE Balooga st", City: "Blortland", State: "Booregon" Zip: "97999"_
-_output: "Ted Leary, 2008 NE Balooga st, Blortland Booregon, 97999"_
+* _input: name: "Ted Leary", Street: "2008 NE Balooga st", City: "Blortland", State: "Booregon" Zip: "97999"_
+* _output: "Ted Leary, 2008 NE Balooga st, Blortland Booregon, 97999"_
 
 
 ## The purpose of this website is to allow the user to choose pizza toppings, determine a price and ultimately order a pizza.
